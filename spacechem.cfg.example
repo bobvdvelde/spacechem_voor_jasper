@@ -1,4 +1,4 @@
-SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@hostname/dbname'
+SQLALCHEMY_DATABASE_URI = 'postgresql://vagrant:vagrant@0.0.0.0:1526/spacechem'
 SECRET_KEY = 'secret for session encryption'
 UPLOADS_DEFAULT_DEST = '/path/to/upload/destination/folder'
 UPLOADS_DEFAULT_URL = 'http://url.to/upload/destination/folder/'

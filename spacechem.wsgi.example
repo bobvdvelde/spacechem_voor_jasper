@@ -1,4 +1,4 @@
 import sys
-sys.path.append("/path/to/source/files")
+sys.path.append("/c/japser/SolutionNet")
 
 from spacechem import app as application
