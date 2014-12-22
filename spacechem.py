@@ -4,8 +4,8 @@ import zipfile
 
 from boto.exception import BotoServerError
 from flask import Flask, render_template, abort, request, redirect, session, url_for, flash
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.uploads import configure_uploads, patch_request_class
+from flaskext.sqlalchemy import SQLAlchemy
+from flaskext.uploads import configure_uploads, patch_request_class
 from sqlalchemy import func, cast, Integer
 from sqlalchemy.orm.exc import NoResultFound
 
@@ -451,4 +451,4 @@ def page_not_found(error):
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='0.0.0.0', port=3500)
+    app.run()

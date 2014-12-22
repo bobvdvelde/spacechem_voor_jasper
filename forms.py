@@ -1,14 +1,16 @@
-from flask.ext.uploads import UploadSet
-from wtforms import Form, validators
-import flask.ext.wtf.file as file
-from wtforms.fields import (
+from flaskext.uploads import UploadSet
+from flaskext.wtf import (
     BooleanField,
+    file,
     FileField,
+    Form,
     PasswordField,
     RadioField,
     SubmitField,
     TextAreaField,
     TextField,
+    ValidationError,
+    validators,
 )
 
 import models
