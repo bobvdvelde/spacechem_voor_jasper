@@ -1,4 +1,14 @@
-import bcrypt
+'''
+
+WARNING: DANGER WILL ROBINSON! 
+
+BCRYPT DEACTIVATED FOR LOCAL DEVELOPMENT CONVENIENCE; 
+
+PASSWORDS STORED AS PLAIN TEXT!
+
+'''
+
+#import bcrypt
 import sqlite3
 
 from sqlalchemy import func, and_
@@ -24,10 +34,10 @@ class User(db.Model):
         self.set_password(password)
 
     def set_password(self, password):
-        self.password = bcrypt.hashpw(password, bcrypt.gensalt())
+        self.password = password #bcrypt.hashpw(password, bcrypt.gensalt())
 
     def check_password(self, password):
-        return bcrypt.hashpw(password, self.password) == self.password
+        return password == self.password # bcrypt.hashpw(password, self.password)
 
 
 class Level(db.Model):

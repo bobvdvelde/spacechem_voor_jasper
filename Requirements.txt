@@ -1,0 +1,12 @@
+Flask==0.6.1
+Flask-SQLAlchemy==0.11
+Flask-Uploads==0.1.2
+Flask-WTF==0.5.2
+Jinja2==2.7.3
+MarkupSafe==0.23
+SQLAlchemy==0.6.6
+WTForms==0.6.3
+Werkzeug==0.9.6
+argparse==1.2.1
+boto==2.0b4
+wsgiref==0.1.2
